@@ -1,0 +1,43 @@
+@import "null.scss";
+
+@mixin flexible () {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+@mixin absolute-centering() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.wrapper {
+  width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.slider-block {
+  background-color: rgb(185, 185, 171);
+  padding: 20px;
+}
+
+.slider {
+  width: 400px;
+  margin: 0 auto;
+  height: 5px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.pointer {
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
