@@ -41,3 +41,31 @@
   background-color: red;
   border-radius: 50%;
 }
+
+
+.gallery-block {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  .left-arrow,
+  .right-arrow {
+    width: 100px;
+    height: 50px;
+    align-self: center;
+  }
+  .image {
+    width: 400px;
+  }
+  img {
+    display: block;
+    width: 100px;
+    height: 100%;
+  }
+  .left-arrow {
+    background-color: rgb(90, 173, 57);
+  }
+  .right-arrow {
+    background-color: rgb(90, 173, 57);
+  }
+
+}
