@@ -190,7 +190,26 @@ let newsArray = [
     '12 12 12 12 12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam ratione delectus, rerum deleniti omnis, necessitatibus dolore dignissimos consectetur incidunt doloremque, qui sapiente? Consequatur, ab suscipit culpa sequi doloremque voluptatibus!',
 ]
 
+function addNews(namArr) {
+    const newP = document.createElement('p')
+    newP.textContent = newsArray[namArr]
+    newsBlock.append(newP)
+}
+addNews(0)   // все работает
+let NamNews = 0
+window.addEventListener('scroll', () => {
+    if (scrollY + innerHeight > document.body.scrollHeight) {
+        for(; NamNews < newsArray.length;) {
+        console.log(234234)
+            setTimeout(addNews(NamNews), 2000)
+            NamNews += 1
+            return
+        }
+    }
+    });
 
+
+    ///////////////////////////////////////////////////////////////////////
 
 
 
