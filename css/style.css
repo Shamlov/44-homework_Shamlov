@@ -123,4 +123,31 @@ html, body {
 }
 .gallery-block .right-arrow {
   background-color: rgb(90, 173, 57);
+}
+.gallery-block .inactive {
+  background-color: red;
+}
+
+.accordion-block {
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(219, 218, 206);
+}
+.accordion-block .accordion-name {
+  font-size: 24px;
+  background-color: rgb(186, 235, 114);
+  border: 1px solid black;
+  padding: 5px;
+}
+.accordion-block .d-none {
+  display: none;
+}
+
+.news-block {
+  padding: 10px;
+  background-color: rgb(186, 235, 114);
+  font-size: 18px;
+}
+.news-block p:not(:last-child) {
+  padding-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
